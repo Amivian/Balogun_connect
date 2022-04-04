@@ -1,105 +1,4 @@
-/* -------------------------------------------------------------------------------- /
-	
-	Magentech jQuery
-	Created by Magentech
-	v1.0 - 20.9.2016
-	All rights reserved.
-
-	+----------------------------------------------------+
-		TABLE OF CONTENTS
-	+----------------------------------------------------+
-	
-	[1]		Language and Currency Dropdowns
-	[2]		Header Top link
-	[3]		Resonsive Header Top
-	[4]		Accordion to Bonus page
-	[5]		Magnific Popup
-	[6]		Quick View
-	[7]		Quantity minus and plus
-	[8]		Owl carousel - Slider
-	[9]		Listing Tabs - Slider
-	[10]	Other Query
-	[11]	Page Quickview
-	[12]	Page About Us
-	[13]	Page Category
-	[14]	Page Detail
-/ -------------------------------------------------------------------------------- */
-
-
 $(document).ready(function(){
-/* ---------------------------------------------------
-	Language and Currency Dropdowns
--------------------------------------------------- */
-
-	$screensize = $(window).width();
-	if ($screensize > 991) {
-	$('#currency, #bt-language, #my_account').hover(function() {
-		$(this).find('ul').stop(true, true).slideDown('fast');
-	  },function() {
-		$(this).find('ul').stop(true, true).css('display', 'none');
-	  });
-	}
-	
-// Hide tooltip when clicking on it
-    var hasTooltip = $("[data-toggle='tooltip']").tooltip();
-	hasTooltip.on('click', function () {
-		    $(this).tooltip('hide')
-	});
-/* ---------------------------------------------------
-	Header Top link
--------------------------------------------------- */
-	$(".header-top-right .top-link > li").mouseenter(function(){
-		$(".header-top-right .top-link > li.account").addClass('inactive');
-	});
-	$(".header-top-right .top-link > li").mouseleave(function(){
-		$(".header-top-right .top-link > li.account").removeClass('inactive');
-	});
-	$(".header-top-right .top-link > li.account").mouseenter(function(){
-		$(".header-top-right .top-link > li.account").removeClass('inactive');
-	});
-/* ---------------------------------------------------
-	Resonsive Header Top
--------------------------------------------------- */
-	$(".collapsed-block .expander").click(function (e) {
-        var collapse_content_selector = $(this).attr("href");
-        var expander = $(this);
-		
-        if (!$(collapse_content_selector).hasClass("open")) {
-			expander.addClass("open").html("<i class='fa fa-angle-up'></i>") ;
-		}
-		else expander.removeClass("open").html("<i class='fa fa-angle-down'></i>");
-		
-		if (!$(collapse_content_selector).hasClass("open")) $(collapse_content_selector).addClass("open").slideDown("normal");
-        else $(collapse_content_selector).removeClass("open").slideUp("normal");
-        e.preventDefault()
-    })
-
-/* ---------------------------------------------------
-	Accordion to Bonus page
--------------------------------------------------- */
-	$("ul.yt-accordion li").each(function() {
-		if($(this).index() > 0) {
-			$(this).children(".accordion-inner").css('display', 'none');
-		}
-		else {
-			$(this).find(".accordion-heading").addClass('active');
-		}
-		
-		var ua = navigator.userAgent,
-		event = (ua.match(/iPad/i)) ? "touchstart" : "click";
-		$(this).children(".accordion-heading").bind(event, function() {
-			$(this).addClass(function() {
-				if($(this).hasClass("active")) return "";
-				return "active";
-			});
-	
-			$(this).siblings(".accordion-inner").slideDown(350);
-			$(this).parent().siblings("li").children(".accordion-inner").slideUp(350);
-			$(this).parent().siblings("li").find(".active").removeClass("active");
-		});
-	});
-	
-
 	
 /* ---------------------------------------------------
 	Magnific Popup
@@ -214,22 +113,6 @@ jQuery(function ($) {
 });
 
 				
-/* ---------------------------------------------------
-	Back to Top
--------------------------------------------------- */
-$(".back-to-top").addClass("hidden-top");
-	$(window).scroll(function () {
-	if ($(this).scrollTop() === 0) {
-		$(".back-to-top").addClass("hidden-top")
-	} else {
-		$(".back-to-top").removeClass("hidden-top")
-	}
-});
-
-$('.back-to-top').click(function () {
-	$('body,html').animate({scrollTop:0}, 1200);
-	return false;
-});	
 /* ---------------------------------------------------
 	Range slider && Filter  Reset
 -------------------------------------------------- */
@@ -407,11 +290,11 @@ $(function ($) {
 /* ---------------------------------------------------
 	Other Query
 -------------------------------------------------- */
-$(document).ready(function($) {
-	$('.date').datetimepicker({
-		pickTime: false
-	});
-});
+// $(document).ready(function($) {
+// 	$('.date').datetimepicker({
+// 		pickTime: false
+// 	});
+// });
 
 /* ---------------------------------------------------
 	Page About Us
@@ -611,31 +494,31 @@ $(document).ready(function() {
 	Page Category
 -------------------------------------------------- */
 
-$(document).ready(function(){
-	$('#cat_accordion').cutomAccordion ({
-		eventType: 'click',
-		autoClose: true,
-		saveState: true,
-		disableLink: true,
-		speed: 'slow',
-		showCount: false,
-		autoExpand: true,
-		cookie	: 'dcjq-accordion-1',
-		classExpand	 : 'button-view'
-	});  
-});
+// $(document).ready(function(){
+// 	$('#cat_accordion').cutomAccordion ({
+// 		eventType: 'click',
+// 		autoClose: true,
+// 		saveState: true,
+// 		disableLink: true,
+// 		speed: 'slow',
+// 		showCount: false,
+// 		autoExpand: true,
+// 		cookie	: 'dcjq-accordion-1',
+// 		classExpand	 : 'button-view'
+// 	});  
+// });
 
-$(function() {
-	var austDay = new Date(2017, 3 - 1, 28);
-	$('.defaultCountdown-30').countdown(austDay, function(event) {
-		var $this = $(this).html(event.strftime(''
-		   + '<div class="time-item time-day"><div class="num-time">%D</div><div class="name-time">Day </div></div>'
-		   + '<div class="time-item time-hour"><div class="num-time">%H</div><div class="name-time">Hour </div></div>'
-		   + '<div class="time-item time-min"><div class="num-time">%M</div><div class="name-time">Min </div></div>'
-		   + '<div class="time-item time-sec"><div class="num-time">%S</div><div class="name-time">Sec </div></div>'));
-	});
+// $(function() {
+// 	var austDay = new Date(2017, 3 - 1, 28);
+// 	$('.defaultCountdown-30').countdown(austDay, function(event) {
+// 		var $this = $(this).html(event.strftime(''
+// 		   + '<div class="time-item time-day"><div class="num-time">%D</div><div class="name-time">Day </div></div>'
+// 		   + '<div class="time-item time-hour"><div class="num-time">%H</div><div class="name-time">Hour </div></div>'
+// 		   + '<div class="time-item time-min"><div class="num-time">%M</div><div class="name-time">Min </div></div>'
+// 		   + '<div class="time-item time-sec"><div class="num-time">%S</div><div class="name-time">Sec </div></div>'));
+// 	});
 
-});
+// });
 
 function display(view) {
 		$('.products-list').removeClass('list grid').addClass(view);
@@ -686,8 +569,11 @@ function display(view) {
 /* ---------------------------------------------------
 	Page Product Detail
 -------------------------------------------------- */
+/* ---------------------------------------------------
+	Page Product Detail
+-------------------------------------------------- */
 $(document).ready(function($) {
-	$('.releate-products').owlCarousel2({
+	$('.related-products').owlCarousel2({
 		pagination: false,
 		center: false,
 		nav: true,

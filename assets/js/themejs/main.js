@@ -165,7 +165,8 @@ $('.yt-content-slider').each(function () {
 	});
 
 
-// popup
+
+	// popup
 const popup = document.querySelector(".popup");
 const closePopup = document.querySelector(".popup-close");
 
@@ -184,11 +185,67 @@ if (popup) {
  // Scroll to top
    window.addEventListener('scroll', function(){
       const scroll=document.querySelector('.scrollTop');
-     scroll.classList.toggle("active", window.scrollY > 500)
- })
+     scroll.classList.toggle("active", window.scrollY > 600)
+ });
+   
  function scrollToTop(){
     window.scrollTo({
          top:0,
          behavior:"smooth"
     })
   }
+
+// cart quantity
+	var product_total_amt = document.getElementById('product_total_amt');
+	var total_cart_amt = document.getElementById('total_cart_amt');
+	var dicountCode = document.getElementById('discount_code1');
+	var delivery_fee =document.getElementById('delivery_fee');
+	const decreaseNumber = (incdec, itemprice) =>{
+		var itemval = document.getElementById(incdec);
+		var itemprice = document.getElementById(itemprice);
+		if (itemval.value <= 0) {
+			itemval.value = 0;
+		}else{
+			itemval.value = parseInt(itemval.value) - 1;
+			itemval.style.background="#fff";
+			itemval.style.color="#000";
+			itemprice.innerHTML = parseInt(itemprice.innerHTML) - 15;
+			product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) - 15;
+			total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(delivery_fee.innerHTML) ;
+		}
+	}
+
+	const increaseNumber = (incdec, itemprice) =>{
+		var itemval = document.getElementById(incdec);
+		var itemprice = document.getElementById(itemprice);
+		// console.log(itemval.value);
+		if (itemval.value >= 5) {
+			itemval.value = 5;
+			alert("max 5 allowed");
+			itemval.style.background="#0dcaf0";
+			itemval.style.color="#fff";
+		}else{
+			itemval.value = parseInt(itemval.value) + 1;
+			itemprice.innerHTML = parseInt(itemprice.innerHTML) + 15;
+			product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) + 15;
+			total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(delivery_fee.innerHTML);
+		}
+	}
+
+	const discount_code = () =>{
+		let totalamtcurr = parseInt(total_cart_amt.innerHTML);
+		let error_trw = document.getElementById('error_trw')
+		if(discountCode.value === 'balogun'){
+			let newtotalamt = totalamtcurr - 15;
+			total_cart_amt.innerHTML = newtotalamt;
+			error_trw.innerHTML = "Code Valid!";
+		}else{
+			error_trw.innerHTML = "Try again! Valid code is Balogun";
+		}
+	}
+
+// var counter = 0;
+// cartArray.forEach(i => {
+//    counter += i.cant;
+// });
+// return counter;

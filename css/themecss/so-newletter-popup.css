@@ -92,13 +92,7 @@
 .so-custom-popup .popup-content .signup .email, .so-custom-default .email{
     margin: 10px 0;
 }
-/* .so_newletter_custom_popup .so-custom-popup .oca_popup .popup-content .popup-title{
-    padding: 20px 10px 30px 10px;
-    color: #111111;
-    font-size: 26px;
-    line-height: 100%;
-    text-transform: uppercase;
-} */
+
 .so_newletter_custom_popup .so-custom-popup .oca_popup .popup-content .popup-title,.so-custom-default .popup-title{
   
     font-size: 26px;

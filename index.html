@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="keywords" content="Balogun, Shopping site, eCommerce">
 		<meta name="description" content="Balogun- Shopping eCommerce Lagos-Island">
-		<title>Balogun | Your Go to Shopping Site</title>
+		<title>Balogun Your Go to Shopping Site</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 			<!-- 	favicon
@@ -21,7 +21,6 @@
 	    <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
 		<link href="css/themecss/lib.css" rel="stylesheet">
 		<link href="assets/js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/styles.css">
 
 				<!-- Google web fonts
 	    =========================================== -->
@@ -29,10 +28,11 @@
 
 				<!-- Theme CSS
 		============================================ -->
-	   	<link href="css/themecss/so_megamenu.css" rel="stylesheet">
 	    <link href="css/themecss/so-categories.css" rel="stylesheet">
 		<link href="css/themecss/so-listing-tabs.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/theme.css">
 
 	</head>
 	<body>
@@ -1024,7 +1024,7 @@
 															  <div class="button-group">
 																<button class="addToCart addToCart--notext" type="button" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="button-group__text" >Add to Cart</span></button>
 																<button class="wishlist" onclick="wishlist.add('42');"><i class="fa fa-heart"></i>  </button>
-																<button class="compare" type="button" data-toggle="tooltip"><i class="fa fa-exchange"></i> </button>
+																<button class="compare" onclick="compare.add('42')" type="button" data-toggle="tooltip"><i class="fa fa-exchange"></i> </button>
 															  </div>
 														</div><!-- right block -->
 													</div>
@@ -1061,7 +1061,7 @@
 															<div class="button-group">
 																<button class="addToCart addToCart--notext" type="button" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="button-group__text"  >Add to Cart</span></button>
 																<button class="wishlist" onclick="wishlist.add('42');"><i class="fa fa-heart"></i> </button>
-																<button class="compare" type="button" ><i class="fa fa-exchange"></i> </button>
+																<button class="compare" onclick="compare.add('42');" ><i class="fa fa-exchange"></i> </button>
 															</div>
 														</div><!-- right block -->
 													</div>
@@ -1100,7 +1100,7 @@
 															  <div class="button-group">
 																<button class="addToCart addToCart--notext" type="button" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="button-group__text" >Add to Cart</span></button>
 																<button class="wishlist" onclick="wishlist.add('42');"><i class="fa fa-heart"></i>  </button>
-																<button class="compare" type="button" data-toggle="tooltip"><i class="fa fa-exchange"></i> </button>
+																<button class="compare" onclick="compare.add('42');" type="button" data-toggle="tooltip"><i class="fa fa-exchange"></i> </button>
 															  </div>
 														</div><!-- right block -->
 													</div>
@@ -2969,180 +2969,6 @@
 					<div class="products-slider-bottom">
 						<div class="row">
 							<div class="module so-extraslider--new titleLine col-sm-6 col-xs-12">
-								<h3 class="modtitle modtitle--small"></h3>
-								<div id="so_extraslider1__home">
-									
-									<!-- Begin extraslider-inner -->
-									<div class="so-extraslider products-list grid product-style__8"  data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="0" data-items_column0="3" data-items_column1="2" data-items_column2="1"  data-items_column3="1" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-loop="no" data-hoverpause="yes">
-										<!--Begin Items-->
-										<div class="ltabs-item product-layout">
-											<div class="product-item-container">
-												<div class="left-block">
-													<div class="product-image-container">
-														<img src="image/demo/shop/product/home/10_7.jpg"  alt="product" class="img-responsive" />
-													</div>
-													<!--Sale Label-->
-													<span class="label label-sale">Perfumes and Body Mists</span>
-													
-													<!--full quick view block-->
-													<a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
-													<!--end full quick view block-->
-												</div>
-												<div class="right-block">
-													<div class="caption">
-														<h4><a href="product.html">Qurem mazem numa dikam</a></h4>		
-														<div class="ratings">
-															<div class="rating-box">
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-															</div>
-														</div>
-																			
-														<div class="price">
-															<span class="price-new">N5000.00</span> 
-															<span class="price-old">N6200.00</span>	
-														</div>
-													</div>
-													
-													<div class="button-group">
-														<button class="addToCart addToCart--notext" type="button" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="button-group__text">Add to Cart</span></button>
-														<button class="wishlist" type="button" onclick="wishlist.add('42');"><i class="fa fa-heart"></i>  </button>
-														<button class="compare" type="button" onclick="compare.add('42');"><i class="fa fa-exchange"></i>  </button>
-													</div>
-												</div><!-- right block -->
-											</div>
-										</div>
-										
-										<div class="ltabs-item product-layout">
-											<div class="product-item-container">
-												<div class="left-block">
-													<div class="product-image-container  ">
-														<img src="image/demo/shop/product/home/8_3.jpg"  alt="product" class="img-responsive" />
-													</div>
-													<!--Sale Label-->
-													<span class="label label-sale">Sale</span>
-													<!--full quick view block-->
-													<a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
-													<!--end full quick view block-->
-												</div>
-												<div class="right-block">
-													<div class="caption">
-														<h4><a href="product.html">Suma fuma direm mase</a></h4>		
-														<div class="ratings">
-															<div class="rating-box">
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-															</div>
-														</div>
-																			
-														<div class="price">
-															<span class="price-new">N15000.00</span> 
-															<span class="price-old">N12005.00</span>	 
-														</div>
-													</div>
-													
-													<div class="button-group">
-														<button class="addToCart addToCart--notext" type="button" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="button-group__text">Add to Cart</span></button>
-														<button class="wishlist" type="button" onclick="wishlist.add('42');"><i class="fa fa-heart"></i>  </button>
-														<button class="compare" type="button" onclick="compare.add('42');"><i class="fa fa-exchange"></i>  </button>
-													</div>
-												</div><!-- right block -->
-											</div>
-										</div>
-										<div class="ltabs-item product-layout">
-											<div class="product-item-container">
-												<div class="left-block">
-													<div class="product-image-container second_img ">
-														<img src="image/demo/shop/product/home/7_7.jpg"  alt="product" class="img-responsive" />
-													</div>
-													<!--Sale Label-->
-													<span class="label label-sale">Sale</span>
-													<!--full quick view block-->
-													<a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
-													<!--end full quick view block-->
-												</div>
-												<div class="right-block">
-													<div class="caption">
-														<h4><a href="product.html">Pumasi dema nones mame</a></h4>		
-														<div class="ratings">
-															<div class="rating-box">
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-															</div>
-														</div>
-																			
-														<div class="price">
-															<span class="price-new">N12000.00</span> 
-															<span class="price-old">N11005.00</span>	 
-														</div>
-													</div>
-													
-													<div class="button-group">
-														<button class="addToCart addToCart--notext" type="button" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="button-group__text">Add to Cart</span></button>
-														<button class="wishlist" type="button" onclick="wishlist.add('42');"><i class="fa fa-heart"></i>  </button>
-														<button class="compare" type="button" onclick="compare.add('42');"><i class="fa fa-exchange"></i>  </button>
-													</div>
-												</div><!-- right block -->
-											</div>
-										</div>
-										
-										<div class="ltabs-item product-layout">
-											<div class="product-item-container">
-												<div class="left-block">
-													<div class="product-image-container ">
-														<img src="image/demo/shop/product/home/5_2_9.jpg"  alt="product" class="img-responsive" />
-													</div>
-													<!--Sale Label-->
-													<span class="label label-sale">Sale</span>
-													<!--full quick view block-->
-													<a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
-													<!--end full quick view block-->
-												</div>
-												<div class="right-block">
-													<div class="caption">
-														<h4><a href="product.html">Taetem hasem razem pokam </a></h4>		
-														<div class="ratings">
-															<div class="rating-box">
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-																<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-															</div>
-														</div>
-																			
-														<div class="price">
-															<span class="price-new">N12000.00</span> 
-															<span class="price-old">N16002.00</span>		 
-														</div>
-													</div>
-													
-													<div class="button-group">
-														<button class="addToCart addToCart--notext" type="button" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="button-group__text">Add to Cart</span></button>
-														<button class="wishlist" type="button" onclick="wishlist.add('42');"><i class="fa fa-heart"></i>  </button>
-														<button class="compare" type="button" onclick="compare.add('42');"><i class="fa fa-exchange"></i>  </button>
-													</div>
-												</div><!-- right block -->
-											</div>
-										</div>
-									
-										<!--End Items-->
-										
-										
-									</div>
-									<!--End extraslider-inner -->
-								</div>
-							</div>
-							<div class="module so-extraslider--new titleLine col-sm-6 col-xs-12">
 								<h3 class="modtitle modtitle--small">Health and Medics </h3>
 								<div id="so_extraslider2__home" class="so-extraslider--home ">
 									
@@ -3318,6 +3144,7 @@
 													<!--<span class="label label-sale">Sale</span>-->
 													<!--full quick view block-->
 													<a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
+													
 													<!--end full quick view block-->
 												</div>
 												<div class="right-block">
@@ -3469,7 +3296,7 @@
 			<!-- /main contents -->
 
 			<!-- Footer Container -->
-		      <footer class="footer-container type_footer1">
+		      <footer class="footer-container">
 			      <!-- Footer Top Container -->
 			       <section class="footer-top">
 				<div class="container content">
@@ -3540,31 +3367,31 @@
 											<li>
 												<h4>MOST SEARCHED KEYWORDS MARKET:</h4>
 												<a href="#">Xiaomi Mi3</a> | <a href="#">Digiflip Pro XT 712 Tablet</a> | <a href="#">Mi 3 Phones</a> | <a href="#">View all</a></li>
-											<li>
-												<h4>MOBILES:</h4>
-												<a href="#">Moto E</a> | <a href="#">Samsung Mobile</a> | <a href="#">Micromax Mobile</a> | <a href="#">Nokia Mobile</a> | <a href="#">HTC Mobile</a> | <a href="#">Sony Mobile</a> | <a href="#">Apple Mobile</a> | <a href="#">LG Mobile</a> | <a href="#">Karbonn Mobile</a> | <a href="#">View all</a></li>
-											<li>
-												<h4>CAMERA:</h4>
-												<a href="#">Nikon Camera</a> | <a href="#">Canon Camera</a> | <a href="#">Sony Camera</a> | <a href="#">Samsung Camera</a> | <a href="#">Point shoot camera</a> | <a href="#">Camera Lens</a> | <a href="#">Camera Tripod</a> | <a href="#">Camera Bag</a> | <a href="#">View all</a></li>
-											<li>
-												<h4>LAPTOPS:</h4>
-												<a href="#">Apple Laptop</a> | <a href="#">Acer Laptop</a> | <a href="#">Sony Laptop</a> | <a href="#">Dell Laptop</a> | <a href="#">Asus Laptop</a> | <a href="#">Toshiba Laptop</a> | <a href="#">LG Laptop</a> | <a href="#">HP Laptop</a> | <a href="#">Notebook</a> | <a href="#">View all</a></li>
-											<li>
-												<h4>TVS:</h4>
-												<a href="#">Sony TV</a> | <a href="#">Samsung TV</a> | <a href="#">LG TV</a> | <a href="#">Panasonic TV</a> | <a href="#">Onida TV</a> | <a href="#">Toshiba TV</a> | <a href="#">Philips TV</a> | <a href="#">Micromax TV</a> | <a href="#">LED TV</a> | <a href="#">LCD TV</a> | <a href="#">Plasma TV</a> | <a href="#">3D TV</a> | <a href="#">Smart TV</a> | <a href="#">View all</a></li>
-											<li>
-												<h4>TABLETS:</h4>
-												<a href="#">Micromax Tablets</a> | <a href="#">HCL Tablets</a> | <a href="#">Samsung Tablets</a> | <a href="#">Lenovo Tablets</a> | <a href="#">Karbonn Tablets</a> | <a href="#">Asus Tablets</a> | <a href="#">Apple Tablets</a> | <a href="#">View all</a></li>
-											<li>
-												<h4>WATCHES:</h4>
-												<a href="#">FCUK Watches</a> | <a href="#">Titan Watches</a> | <a href="#">Casio Watches</a> | <a href="#">Fastrack Watches</a> | <a href="#">Timex Watches</a> | <a href="#">Fossil Watches</a> | <a href="#">Diesel Watches</a> | <a href="#">Luxury Watches</a> | <a href="#">View all</a></li>
-											<li>
-												<h4>CLOTHING:</h4>
-												<a href="#">Shirts</a> | <a href="#">Jeans</a> | <a href="#">T shirts</a> | <a href="#">Kurtis</a> | <a href="#">Sarees</a> | <a href="#">Levis Jeans</a> | <a href="#">Killer Jeans</a> | <a href="#">Pepe Jeans</a> | <a href="#">Arrow Shirts</a> | <a href="#">Ethnic Wear</a> | <a href="#">Formal Shirts</a> | <a href="#">Peter England Shirts</a> | <a href="#">View all</a></li>
-											<li>
-												<h4>FOOTWEAR:</h4>
-												<a href="#">Shoes</a> | <a href="#">Casual Shoes</a> | <a href="#">Adidas Shoes</a> | <a href="#">Gas Shoes</a> | <a href="#">Puma Shoes</a> | <a href="#">Reebok Shoes</a> | <a href="#">Woodland Shoes</a> | <a href="#">Red tape Shoes</a> | <a href="#">Nike Shoes</a> | <a href="#">View all</a></li>
-										</ul>
+												<li>
+													<h4>MOBILES:</h4>
+													<a href="#">Moto E</a> | <a href="#">Samsung Mobile</a> | <a href="#">Micromax Mobile</a> | <a href="#">Nokia Mobile</a> | <a href="#">HTC Mobile</a> | <a href="#">Sony Mobile</a> | <a href="#">Apple Mobile</a> | <a href="#">LG Mobile</a> | <a href="#">Karbonn Mobile</a> | <a href="#">View all</a></li>
+													<li>
+														<h4>CAMERA:</h4>
+														<a href="#">Nikon Camera</a> | <a href="#">Canon Camera</a> | <a href="#">Sony Camera</a> | <a href="#">Samsung Camera</a> | <a href="#">Point shoot camera</a> | <a href="#">Camera Lens</a> | <a href="#">Camera Tripod</a> | <a href="#">Camera Bag</a> | <a href="#">View all</a></li>
+														<li>
+															<h4>LAPTOPS:</h4>
+															<a href="#">Apple Laptop</a> | <a href="#">Acer Laptop</a> | <a href="#">Sony Laptop</a> | <a href="#">Dell Laptop</a> | <a href="#">Asus Laptop</a> | <a href="#">Toshiba Laptop</a> | <a href="#">LG Laptop</a> | <a href="#">HP Laptop</a> | <a href="#">Notebook</a> | <a href="#">View all</a></li>
+															<li>
+																<h4>TVS:</h4>
+																<a href="#">Sony TV</a> | <a href="#">Samsung TV</a> | <a href="#">LG TV</a> | <a href="#">Panasonic TV</a> | <a href="#">Onida TV</a> | <a href="#">Toshiba TV</a> | <a href="#">Philips TV</a> | <a href="#">Micromax TV</a> | <a href="#">LED TV</a> | <a href="#">LCD TV</a> | <a href="#">Plasma TV</a> | <a href="#">3D TV</a> | <a href="#">Smart TV</a> | <a href="#">View all</a></li>
+																<li>
+																	<h4>TABLETS:</h4>
+																	<a href="#">Micromax Tablets</a> | <a href="#">HCL Tablets</a> | <a href="#">Samsung Tablets</a> | <a href="#">Lenovo Tablets</a> | <a href="#">Karbonn Tablets</a> | <a href="#">Asus Tablets</a> | <a href="#">Apple Tablets</a> | <a href="#">View all</a></li>
+																	<li>
+																		<h4>WATCHES:</h4>
+																		<a href="#">FCUK Watches</a> | <a href="#">Titan Watches</a> | <a href="#">Casio Watches</a> | <a href="#">Fastrack Watches</a> | <a href="#">Timex Watches</a> | <a href="#">Fossil Watches</a> | <a href="#">Diesel Watches</a> | <a href="#">Luxury Watches</a> | <a href="#">View all</a></li>
+																		<li>
+																			<h4>CLOTHING:</h4>
+																			<a href="#">Shirts</a> | <a href="#">Jeans</a> | <a href="#">T shirts</a> | <a href="#">Kurtis</a> | <a href="#">Sarees</a> | <a href="#">Levis Jeans</a> | <a href="#">Killer Jeans</a> | <a href="#">Pepe Jeans</a> | <a href="#">Arrow Shirts</a> | <a href="#">Ethnic Wear</a> | <a href="#">Formal Shirts</a> | <a href="#">Peter England Shirts</a> | <a href="#">View all</a></li>
+																			<li>
+																				<h4>FOOTWEAR:</h4>
+																				<a href="#">Shoes</a> | <a href="#">Casual Shoes</a> | <a href="#">Adidas Shoes</a> | <a href="#">Gas Shoes</a> | <a href="#">Puma Shoes</a> | <a href="#">Reebok Shoes</a> | <a href="#">Woodland Shoes</a> | <a href="#">Red tape Shoes</a> | <a href="#">Nike Shoes</a> | <a href="#">View all</a></li>
+																			</ul>
 									</div>
 								</div>
 							</div>
@@ -3590,6 +3417,10 @@
 		    	</footer>
 	       <!-- //end Footer Container -->
 
+	      <div id="loader-wrapper">
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+         </div>
 			<!-- mobile nav -->
 				<div class="navigation--list">
 					<div class="navigation__content">
@@ -3654,12 +3485,11 @@
 
 
 		<!-- Theme files
-		============================================ --><!-- 
-		<script type="text/javascript" src="assets/js/themejs/application.js"></script> -->
-		<script type="text/javascript" src="assets/js/themejs/main.js"></script><!-- 
-		<script type="text/javascript" src="assets/js/themejs/so_megamenu.js"></script>
-		<script type="text/javascript" src="assets/js/themejs/addtocart.js"></script>	 -->
+		============================================ -->
+		<script type="text/javascript" src="assets/js/themejs/main.js"></script>
+		<script type="text/javascript" src="assets/js/themejs/addtocart.js"></script>	
 		<script type="text/javascript" src="assets/js/themejs/pathLoader.js"></script>	
+		<script type="text/javascript" src="assets/js/themejs/application.js"></script>
 
     </body>
 </html>

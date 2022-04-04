@@ -7,7 +7,10 @@
 	.ps-block--site-features .ps-block__item:first-child {
 		padding-left: 40px;
 	}
-
+	.page{
+		max-width: 100%;
+		justify-content: flex-end;
+	}
 }
 
 @media (max-width:767px) {
@@ -159,10 +162,6 @@
 		width: 1200px;
 	}
 
-	.navigation--sidebar .navigation__actions {
-		display: none
-	}
-
 	.navigation--list {
 		display: none
 	}
@@ -206,6 +205,14 @@
 
 	.footer-line {
 		max-width: 950px;
+	}
+
+	.left-content-product .content-product-right .product-label .price {
+		float: left;
+	}
+
+	.left-content-product .content-product-right .product-label .stock {
+		float: right;
 	}
 
 }
@@ -364,4 +371,35 @@
 		padding: 0.2rem;
 	}
 
+}
+
+
+@media (min-width:768px) {
+    .ps-form--checkout .ps-form__submit {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center
+    }
+    .ps-delivery_address figure{
+        display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+    .ps-delivery_address figure small {
+    font-size: 14px;
+    max-width: 10em;
+	}
+	.ps-delivery_address figure>* {
+    flex-basis: 100%;
+	}
+	.ps-delivery_address figure p {
+    margin-bottom: 0;
+	}
+	.ps-delivery_fee figure{
+	    display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center
+	}
 }
