@@ -14,21 +14,21 @@
     <!-- 		CSS
 		============================================= -->
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link href="assets/js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="css/themecss/lib.css" rel="stylesheet">
     <link href="assets/js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="assets/js/lightslider/lightslider.css" rel="stylesheet">
     <!-- Google web fonts
 	    =========================================== -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&amp;amp;subset=latin-ext" rel="stylesheet">
     <!-- Theme CSS
 		============================================ -->
-    <link href="css/themecss/so_megamenu.css" rel="stylesheet">
-    <link href="css/themecss/so-categories.css" rel="stylesheet">
-    <link href="css/themecss/so-listing-tabs.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/theme.css">
     <link href="css/responsive.css" rel="stylesheet">
 </head>
 
@@ -769,165 +769,112 @@
         <div class="main-container container">
             <ul class="breadcrumb">
                 <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="checkout.html">Checkout Information</a></li>
+                <li><a href="#">Confirm Delivery</a></li>
+                <li><a href="#">Payment</a></li>
             </ul>
             <div class="row">
-                <div id="content" class="col-sm-12">
-                    <h2 class="title">Register Account</h2>
-                    <p>If you already have an account with us, please login at the <a href="login.html" class="agree">login page</a>.</p>
-                    <form action="register.html" method="post" enctype="multipart/form-data" class="form-horizontal account-register clearfix">
-                        <fieldset id="account">
-                            <legend>Your Personal Details</legend>
-                            <div class="form-group required" style="display: none;">
-                                <label class="col-sm-2 control-label">Customer Group</label>
-                                <div class="col-sm-10">
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="customer_group_id" value="1" checked="checked"> Default
+                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                    <div class="checkout-panel">
+                        <div class="panel-body">
+                            <h2 class="title">Payment</h2>
+                            <div class="payment-method">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="card" class="method card">
+                                            <div class="card-logos">
+                                                <img src="images/products/visa_logo.png">
+                                                <img src="images/products/mastercard_logo.png">
+                                            </div>
+                                            <div class="radio-input">
+                                                <input id="card" type="radio" name="payment">
+                                                Pay #340.00 with credit card
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="paypal" class="method paypal">
+                                            <img src="images/products/paypal_logo.png">
+                                            <div class="radio-input">
+                                                <input id="paypal" type="radio" name="payment">
+                                                Pay #340.00 with PayPal
+                                            </div>
                                         </label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-firstname">First Name</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="firstname" value="" placeholder="First Name" id="input-firstname" class="form-control" required>
+                            <div class="input-fields">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="cardholder">Cardholder's Name</label>
+                                        <input type="text" id="cardholder">
+                                        <div class="small-inputs">
+                                            <div>
+                                                <label for="date">Valid</label>
+                                                <input type="text" id="date" placeholder="MM / YY">
+                                            </div>
+                                            <div>
+                                                <label for="verification">CVV / CVC *</label>
+                                                <input type="password" id="verification">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="cardnumber">Card Number</label>
+                                        <input type="password" id="cardnumber">
+                                        <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-lastname">Last Name</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="lastname" value="" placeholder="Last Name" id="input-lastname" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-email">E-Mail</label>
-                                <div class="col-sm-10">
-                                    <input type="email" name="email" value="" placeholder="E-Mail" id="input-email" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-telephone">Telephone</label>
-                                <div class="col-sm-10">
-                                    <input type="tel" name="telephone" value="" placeholder="Telephone" id="input-telephone" class="form-control" required>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset id="address">
-                            <legend>Your Address</legend>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-address-1">Address 1</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="address_1" value="" placeholder="Address 1" id="input-address-1" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label" for="input-address-2">Address 2</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="address_2" value="" placeholder="Address 2" id="input-address-2" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-city">City</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="city" value="" placeholder="City" id="input-city" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-postcode">Post Code</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="postcode" value="" placeholder="Post Code" id="input-postcode" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-state">State</label>
-                                <div class="col-sm-10">
-                                    <select name="state" id="allstate" class="form-control">
-                                        <option value="">State</option>
-                                        <option value="1"> Abia </option>
-                                        <option value="2"> Adamawa </option>
-                                        <option value="3"> Akwa Ibom </option>
-                                        <option value="4"> Anambra </option>
-                                        <option value="5"> Bauchi </option>
-                                        <option value="6"> Bayelsa </option>
-                                        <option value="7"> Benue </option>
-                                        <option value="8"> Borno </option>
-                                        <option value="9"> Cross River </option>
-                                        <option value="10"> Delta </option>
-                                        <option value="11"> Ebonyi </option>
-                                        <option value="12"> Edo </option>
-                                        <option value="13"> Ekiti </option>
-                                        <option value="14"> Enugu </option>
-                                        <option value="15"> FCT </option>
-                                        <option value="16"> Gombe </option>
-                                        <option value="17"> Imo </option>
-                                        <option value="18"> Jigawa </option>
-                                        <option value="19"> Kaduna </option>
-                                        <option value="20"> Kano </option>
-                                        <option value="21"> Katsina </option>
-                                        <option value="22"> Kebbi </option>
-                                        <option value="23"> Kogi </option>
-                                        <option value="24"> Kwara </option>
-                                        <option value="25"> Lagos </option>
-                                        <option value="26"> Nasarawa </option>
-                                        <option value="27"> Niger </option>
-                                        <option value="28"> Ogun </option>
-                                        <option value="29"> Ondo </option>
-                                        <option value="30"> Osun </option>
-                                        <option value="31"> Oyo </option>
-                                        <option value="32"> Plateau </option>
-                                        <option value="33"> Rivers </option>
-                                        <option value="34"> Sokoto </option>
-                                        <option value="35"> Taraba </option>
-                                        <option value="36"> Yobe </option>
-                                        <option value="37"> Zamfara </option>
-                                    </select>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Your Password</legend>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-password">Password</label>
-                                <div class="col-sm-10">
-                                    <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-confirm">Password Confirm</label>
-                                <div class="col-sm-10">
-                                    <input type="password" name="confirm" value="" placeholder="Password Confirm" id="input-confirm" class="form-control" required>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Newsletter</legend>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">Subscribe</label>
-                                <div class="col-sm-10">
-                                    <label class="radio-inline">
-                                        <input type="radio" name="newsletter" value="1"> Yes
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="newsletter" value="0" checked="checked"> No
-                                    </label>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <div class="buttons">
-                            <div class="pull-right">I have read and agree to the <a href="#" class="agree"><b>Pricing Tables</b></a>
-                                <input class="box-checkbox" type="checkbox" name="agree" value="1"> &nbsp;
-                                <button type="submit" value="" class="pull-right ps-btn " >Register</button>
                             </div>
                         </div>
-                    </form>
+                        <div class="ps-form__submit panel-footer mt-4">
+                            <a href="cart.html">
+                                <i class='bx bx-arrow-back mr-3'></i>Return to shopping cart
+                            </a>
+                            <div class="btn cart-btn">
+                                <a href="#" class="ps-btn">Proceed</a>
+                            </div>
+                        </div>
+                        <!-- 
+                        <div class="panel-footer mt-5">
+                            <button class="btn back-btn">Back</button>
+                            <button class="btn next-btn">Next Step</button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12  ps-block--checkout-order">
+                    <div class="ps-form__orders">
+                        <h3 class="ps-form-order">Your order</h3>
+                        <div class="ps-block--checkout-order">
+                            <div class="ps-block__content">
+                                <figure>
+                                    <figcaption><strong>Product</strong><strong>total</strong></figcaption>
+                                </figure>
+                                <figure class="ps-block__items">
+                                    <a href="#">
+                                        <strong>Keepall Bandoulière 50<span>x2</span></strong>
+                                        <small>#30,000</small>
+                                    </a>
+                                    <a href="#">
+                                        <strong>SET OF 3 LINGERIE<span>x2</span></strong><small>#15,000</small>
+                                    </a>
+                                </figure>
+                                <figure>
+                                    <figcaption><strong>Subtotal</strong><small>#</small></figcaption>
+                                </figure>
+                                <figure class="ps-block__total">
+                                    <h3>Total<strong>#45,000</strong></h3>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- //Main Container -->
         <!-- Footer Container -->
-        <footer class="footer-container type_footer1">
+        <footer class="footer-container">
             <!-- Footer Top Container -->
             <section class="footer-top">
                 <div class="container content">
@@ -1076,7 +1023,7 @@
     </div>
     <div class="scrollTop" onclick="scrollToTop()"></div>
     <!-- Include Libs & Plugins
-		============================================ -->
+	============================================ -->
     <script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/owl-carousel/owl.carousel.js"></script>
@@ -1089,13 +1036,10 @@
     <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js"></script>
     <script type="text/javascript" src="assets/js/modernizr/modernizr-2.6.2.min.js"></script>
     <!-- Theme files
-		============================================ -->
-    <!-- 
-		<script type="text/javascript" src="assets/js/themejs/application.js"></script> -->
+	=========================================== -->
     <script type="text/javascript" src="assets/js/themejs/main.js"></script>
-    <!-- 
-		<script type="text/javascript" src="assets/js/themejs/so_megamenu.js"></script>
-		<script type="text/javascript" src="assets/js/themejs/addtocart.js"></script>	 -->
+    <script type="text/javascript" src="assets/js/themejs/application.js"></script>
+    <script type="text/javascript" src="assets/js/themejs/addtocart.js"></script>
 </body>
 
 </html>

@@ -16,6 +16,11 @@
 		}
 	}
 
+	var login ={
+		'login': function(login_id){
+			loginNotice('<h2>Welcom Back!</h2>','<p>You are logged in successfully</p>', 'success')
+		}
+	}
 	/* ---------------------------------------------------
 		jGrowl – jQuery alerts and message box
 	-------------------------------------------------- */
@@ -32,3 +37,15 @@
 		});
 	}
 
+	function loginNotice(title, text, type) {
+		$.jGrowl.defaults.closer = false;
+		//Stop jGrowl
+		//$.jGrowl.defaults.sticky = true;
+		var tpl = '<h3>'+text+'</h3>';
+		$.jGrowl(tpl, {		
+			life: 6000,
+			header: title,
+			speed: 'slow',
+			theme: type
+		});
+	}

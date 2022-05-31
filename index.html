@@ -15,7 +15,9 @@
 		<!-- 		CSS
 		============================================= -->
 		<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-		<link href="assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">	
+		<link href="assets/fontawesome/css/fontawesome.min.css" rel="stylesheet"><!-- 
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 		<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 		<link href="assets/js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
 	    <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
@@ -52,7 +54,7 @@
 				</div>
 			</div>
 
-			<!-- header -->
+		 <!-- header -->
 				<header class="header header--1" data-sticky="true" id="headerSticky">
 					<div class="header__top">
 						<div class="ps-container">
@@ -290,17 +292,17 @@
 							<div class="header__right">
 								<div class="header__actions">
 									<a class="header__extra keychainify-checked" href="/account/compare">
-										<i class='bx bx-bar-chart-square'></i>
-										<span><i>0</i></span>
+										<i id="compare" class='bx bx-bar-chart-square'></i>
+										<span class="compare-quantity"><i>0</i></span>
 									</a>
 									<a class="header__extra keychainify-checked" href="/account/wishlist">
-										<i class='bx bx-heart'></i>
-										<span><i>0</i></span>
+										<i id="wishlist" class='bx bx-heart'></i>
+										<span class="wishlist-quantity"><i>0</i></span>
 									</a>
 									<div class="ps-cart--mini">
 										<a class="header__extra keychainify-checked" href="cart.html">
-											<i class='bx bx-basket'></i>
-											<span><i>0</i></span>
+											<i id="cart" class='bx bx-basket'></i>
+											<span class="cart-quantity"><i>0</i></span>
 										</a>
 										<div class="ps-cart__content">
 											<div class="ps-cart__items">
@@ -483,7 +485,7 @@
 							<div class="navigation__right">
 								<ul class="menu">
 									<li class="menu-item-has-children has-mega-menu">
-										<a href="/shop" class="keychainify-checked">Quick Shopping<i class="bx bx-chevron-down"></i></a>
+										<a href="/shop" class="keychainify-checked">Virtual Shopping<i class="bx bx-chevron-down"></i></a>
 										<div class="mega-menu">
 											<div class="mega-menu__column">
 												<h4>Women's Fashion</h4>
@@ -591,6 +593,93 @@
 											</div>
 										</div>
 									</li>
+
+									<li class="menu-item-has-children has-mega-menu">
+										<a href="/blog" class="keychainify-checked">Customer Service<i class="bx bx-chevron-down"></i></a>
+										<div class="mega-menu">
+											<div class="mega-menu__column">
+												<ul class="mega-menu__list">
+													<li class="mb-2">
+														<a href="" class="bx-icons">
+														<i class="bx bx-info-circle" style=></i>
+														<p>General Information</p>
+													   </a>
+													</li>
+													<li >
+														<a href="" class="bx-icons">
+														<i class='bx bx-gift'></i>
+														<p>Orders</p>
+													   </a>
+													</li>
+												</ul>
+											</div>
+											<div class="mega-menu__column ">
+												<ul class="mega-menu__list">
+													<li class="mb-2">
+														<a href="" class="bx-icons">
+														<i class='bx bxs-truck'></i>
+														<p>Delivery</p>
+													   </a>
+													</li>
+													<li >
+														<a href="" class="bx-icons">
+														<i class="bx bx-credit-card"></i>
+														<p>Payments & Gift cards</p>
+													   </a>
+													</li>
+										    	</ul>
+										    </div>
+											<div class="mega-menu__column">
+												<ul class="mega-menu__list">
+													<li class="mb-2">
+														<a href="" class="bx-icons">
+														<i class='bx bx-revision'></i>
+														<p>Returns & Refunds</p>
+													   </a>
+													</li>
+													<li >
+														<a href="" class="bx-icons">
+														<i class="fas fa-gear"></i>
+														<p>Technical</p>
+													   </a>
+													</li>
+										    	</ul>
+										    </div>
+									   </div>
+								   </li>
+									<li class="menu-item-has-children has-mega-menu">
+										<a href="/" class="keychainify-checked">Market Listing<i class="bx bx-chevron-down"></i></a>
+										<div class="mega-menu">
+											<div class="mega-menu__column ">
+												<h4>Markets</h4>
+												<ul class="mega-menu__list">
+													<li>
+														<a href="balogun" class="keychainify-checked">Balogun</a>
+													</li>
+													<li>
+														<a href="mandilas" class="keychainify-checked">Mandilas</a></li>
+														<li><a href="tinubu" class="keychainify-checked">Tinubu</a>
+													    </li>
+														<li><a href="jankara" class="keychainify-checked">Jankara</a></li><li><a href="oluwole" class="keychainify-checked">Oluwole Urban </a>
+													</li>
+												</ul>
+											</div>
+											<div class="mega-menu__column">
+												<h4>Vendor Pages</h4>
+												<ul class="mega-menu__list">
+													<li>
+														<a href="/vendor/become-a-vendor" class="keychainify-checked">Become a Vendor</a>
+													</li>
+													<li>
+														<a href="/vendor/vendor-store" class="keychainify-checked">Vendor Store</a>
+													</li>
+													<li>
+														<a href="/stores" class="keychainify-checked">Store List</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
 									<li class="menu-item-has-children dropdown">
 										<a href="/" class="keychainify-checked">Gift Box<i class="bx bx-chevron-down"></i></a>
 										<ul class="sub-menu">
@@ -626,69 +715,6 @@
 											</li>
 										</ul>
 									</li>
-									<li class="menu-item-has-children has-mega-menu">
-										<a href="/" class="keychainify-checked">Shop Listing<i class="bx bx-chevron-down"></i></a>
-										<div class="mega-menu">
-											<div class="mega-menu__column">
-												<h4>Basic Page</h4>
-												<ul class="mega-menu__list">
-													<li>
-														<a href="/page/about-us" class="keychainify-checked">About Us</a>
-													</li>
-													<li>
-														<a href="/page/contact-us" class="keychainify-checked">Contact</a></li><li><a href="/page/faqs" class="keychainify-checked">Faqs</a></li><li><a href="/page/page-404" class="keychainify-checked">404 Page</a>
-													</li>
-												</ul>
-											</div>
-											<div class="mega-menu__column">
-												<h4>Vendor Pages</h4>
-												<ul class="mega-menu__list">
-													<li>
-														<a href="/vendor/become-a-vendor" class="keychainify-checked">Become a Vendor</a>
-													</li>
-													<li>
-														<a href="/vendor/vendor-store" class="keychainify-checked">Vendor Store</a>
-													</li>
-													<li>
-														<a href="/stores" class="keychainify-checked">Store List</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</li>
-									<li class="menu-item-has-children has-mega-menu">
-										<a href="/blog" class="keychainify-checked">Customer Service<i class="bx bx-chevron-down"></i></a>
-										<div class="mega-menu">
-											<div class="mega-menu__column">
-												<h4>Blog Layout</h4>
-												<ul class="mega-menu__list">
-													<li>
-														<a href="/blog" class="keychainify-checked">Grid</a>
-													</li>
-													<li>
-														<a href="/blog/blog-small-thumbnail" class="keychainify-checked">Small Thumb</a>
-													</li>
-													<li>
-														<a href="/blog/blog-left-sidebar" class="keychainify-checked">Left Sidebar</a>
-													</li>
-													<li
-														><a href="/blog/blog-right-sidebar" class="keychainify-checked">Right Sidebar</a>
-													</li>
-												</ul>
-											</div>
-											<div class="mega-menu__column">
-												<h4>Single Blog</h4>
-												<ul class="mega-menu__list"><li>
-													<a href="/post/default" class="keychainify-checked">Single 1</a>
-													</li><li><a href="/post/detail-2" class="keychainify-checked">Single 2</a>
-												</li>
-												<li>
-													<a href="/post/detail-3" class="keychainify-checked">Single 3</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</li>
 							</ul>
 							<ul class="navigation__extra">
 								<li>
@@ -776,7 +802,8 @@
 						</form>
 					</div>
 				</header>
-	        <!-- /header -->
+
+    <!-- /header -->
 
 			<!-- Block slideshow  -->
 				<section class="so-slideshow">
@@ -3351,13 +3378,13 @@
 									<ul class="contact-address">
 										<li><span class="fa fa-map-marker"></span> Balogun Connect</li>
 										<li><span class="fa fa-envelope-o"></span> Email: <a href="#"> sales@balogunconnect.com</a></li>
-										<li><span class="fa fa-phone">&nbsp;</span> Phone 1: 0123456789 <br>Phone 2: (123) 4567890</li>
+										<li><span class="fa fa-phone">&nbsp;</span> Phone: (+234)8138858089 </li>
 									</ul>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-sm-12 collapsed-block footer-links">
+						<!-- <div class="col-sm-12 collapsed-block footer-links">
 							<div class="module clearfix">
 								<div class="modcontent">
 									<hr class="footer-lines">
@@ -3395,7 +3422,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			       </section>

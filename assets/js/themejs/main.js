@@ -195,6 +195,8 @@ if (popup) {
     })
   }
 
+  
+
 // cart quantity
 	var product_total_amt = document.getElementById('product_total_amt');
 	var total_cart_amt = document.getElementById('total_cart_amt');

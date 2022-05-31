@@ -283,20 +283,6 @@ $(function ($) {
 });
 
 /* ---------------------------------------------------
-	Owl carousel - Slider
--------------------------------------------------- */
-
-
-/* ---------------------------------------------------
-	Other Query
--------------------------------------------------- */
-// $(document).ready(function($) {
-// 	$('.date').datetimepicker({
-// 		pickTime: false
-// 	});
-// });
-
-/* ---------------------------------------------------
 	Page About Us
 -------------------------------------------------- */
 $(document).ready(function() {
@@ -490,35 +476,6 @@ $(document).ready(function() {
 	});
 });
 
-/* ---------------------------------------------------
-	Page Category
--------------------------------------------------- */
-
-// $(document).ready(function(){
-// 	$('#cat_accordion').cutomAccordion ({
-// 		eventType: 'click',
-// 		autoClose: true,
-// 		saveState: true,
-// 		disableLink: true,
-// 		speed: 'slow',
-// 		showCount: false,
-// 		autoExpand: true,
-// 		cookie	: 'dcjq-accordion-1',
-// 		classExpand	 : 'button-view'
-// 	});  
-// });
-
-// $(function() {
-// 	var austDay = new Date(2017, 3 - 1, 28);
-// 	$('.defaultCountdown-30').countdown(austDay, function(event) {
-// 		var $this = $(this).html(event.strftime(''
-// 		   + '<div class="time-item time-day"><div class="num-time">%D</div><div class="name-time">Day </div></div>'
-// 		   + '<div class="time-item time-hour"><div class="num-time">%H</div><div class="name-time">Hour </div></div>'
-// 		   + '<div class="time-item time-min"><div class="num-time">%M</div><div class="name-time">Min </div></div>'
-// 		   + '<div class="time-item time-sec"><div class="num-time">%S</div><div class="name-time">Sec </div></div>'));
-// 	});
-
-// });
 
 function display(view) {
 		$('.products-list').removeClass('list grid').addClass(view);
@@ -540,31 +497,31 @@ function display(view) {
 		}
 	}
 	
-	$(document).ready(function () {
-		// Check if Cookie exists
-		if($.cookie('display')){
-			view = $.cookie('display');
-		}else{
-			view = 'grid' ;
-		}
-		if(view) display(view);
+	// $(document).ready(function () {
+	// 	// Check if Cookie exists
+	// 	if($.cookie('display')){
+	// 		view = $.cookie('display');
+	// 	}else{
+	// 		view = 'grid' ;
+	// 	}
+	// 	if(view) display(view);
 		
-		// Click Button
-		$('.list-view .btn').each(function() {
-			var ua = navigator.userAgent,
-			event = (ua.match(/iPad/i)) ? 'touchstart' : 'click';
-			$(this).bind(event, function() {
-				$(this).addClass(function() {
-					if($(this).hasClass('active')) return ''; 
-					return 'active';
-				});
-				$(this).siblings('.btn').removeClass('active');
-				$catalog_mode = $(this).data('view');
-				display($catalog_mode);
-			});
+	// 	// Click Button
+	// 	$('.list-view .btn').each(function() {
+	// 		var ua = navigator.userAgent,
+	// 		event = (ua.match(/iPad/i)) ? 'touchstart' : 'click';
+	// 		$(this).bind(event, function() {
+	// 			$(this).addClass(function() {
+	// 				if($(this).hasClass('active')) return ''; 
+	// 				return 'active';
+	// 			});
+	// 			$(this).siblings('.btn').removeClass('active');
+	// 			$catalog_mode = $(this).data('view');
+	// 			display($catalog_mode);
+	// 		});
 			
-		});
-	});
+	// 	});
+	// });
 
 /* ---------------------------------------------------
 	Page Product Detail
@@ -692,18 +649,18 @@ $(document).ready(function() {
 		$(this).find("[data-index='0']").addClass('active');
 	});
 	
-	$('.thumb-video').magnificPopup({
-	  type: 'iframe',
-	  iframe: {
-		patterns: {
-		   youtube: {
-			  index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
-			  id: 'v=', // String that splits URL in a two parts, second part should be %id%
-			  src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
-				},
-			}
-		}
-	});
+	// $('.thumb-video').magnificPopup({
+	//   type: 'iframe',
+	//   iframe: {
+	// 	patterns: {
+	// 	   youtube: {
+	// 		  index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+	// 		  id: 'v=', // String that splits URL in a two parts, second part should be %id%
+	// 		  src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
+	// 			},
+	// 		}
+	// 	}
+	// });
 	$('.product-options li.radio').click(function(){
 		$(this).addClass(function() {
 			if($(this).hasClass("active")) return "";
