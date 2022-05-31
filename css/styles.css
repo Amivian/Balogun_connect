@@ -4518,7 +4518,7 @@ input[type='radio'] {
   border-color: #f62f5e;
 }
 
-.bx-icons{
+.customer-service_icons{
     background: #fff;
     padding: 20px !important;
     height: 100px;
@@ -4526,18 +4526,18 @@ input[type='radio'] {
     transition: all .2s ease-in-out;
 }
 
-.bx-icons:hover{
+.customer-service_icons:hover{
   background-color: #fff !important;
   transform: scale(1.1);
   text-align: justify;
 }
 
-.bx-icons i{
+.customer-service_icons i{
 	font-size: 30px;    
 	padding-left: 40px;
     cursor: pointer;
 }
 
-.bx-icons p {
+.customer-service_icons p {
 	text-align: center;
 }
